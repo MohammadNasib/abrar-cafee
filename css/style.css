@@ -1,0 +1,458 @@
+/* --- universal styles starts --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  transition: 0.5s ease-in;
+}
+
+body {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+body::after {
+  content: "";
+  background: rgba(8, 8, 8, 0.34);
+  width: auto;
+  position: absolute;
+  height: 413%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.7s ease-in-out;
+}
+
+.bg::after {
+  z-index: 1;
+  opacity: 1 !important ;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.background {
+  background: rgba(10, 10, 10, 0.57) url("../imgs/bg-1.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.t-big {
+  margin-bottom: 51px;
+}
+
+.t-small {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.btn {
+  color: white !important;
+  border: 1px solid white !important;
+  margin: 15px 21px;
+  border-radius: 9px !important;
+  font-weight: 500 !important;
+}
+
+.btn:hover {
+  color: chocolate !important;
+}
+
+.mb {
+  margin-bottom: 55px;
+}
+
+/* --- universal styles ends --- */
+
+/* ----- navigation starts ------------- */
+
+.navbar {
+  width: 100%;
+  color: white;
+  padding: 5px 39px !important;
+  position: fixed !important;
+  transition: 0.7s ease-in-out;
+  z-index: 1000;
+}
+
+.logo-img {
+  width: 30%;
+  border-radius: 15px;
+}
+
+#icon {
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin-bottom: 6px;
+  border-radius: 3px;
+  transition: 0.7s ease-in-out;
+}
+
+.change .bar1 {
+  transform: rotate(-405deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(405deg) translate(-8px, -8px);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 74px;
+  right: -430px;
+  padding: 13px;
+  width: 19%;
+  height: 100%;
+  align-items: center;
+  font-size: 1.7rem;
+  transition: 0.7s ease-in-out;
+  z-index: 1000;
+}
+
+.nav-list ul {
+  /* border: 1px solid black; */
+  margin-bottom: 0;
+}
+
+.nav-list li {
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+.nav-link {
+  color: white;
+  text-align: center;
+  display: inline-block !important;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 3px;
+  cursor: pointer;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.open {
+  right: 0;
+}
+
+/* ----- navigation ends ------------- */
+
+/* ----- first section ends ------------- */
+
+.first-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+
+.main-div {
+  width: 50%;
+  padding: 95px 50px 0 50px;
+}
+
+/* ------ first section ends ------ */
+
+/* ------ secend section starts ------ */
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none !important;
+}
+
+.card-body {
+  border: 1px solid black;
+  border-radius: 11px;
+  width: 91%;
+  height: 55vh;
+}
+
+.card img {
+  margin: 11px 0;
+  border-radius: 15px;
+}
+
+.coffee-img {
+  width: 50%;
+}
+
+.snacks-img {
+  width: 44% !important;
+}
+
+.drink-img {
+  width: 80%;
+}
+
+.menu-section .btn {
+  color: black !important;
+  border: 1px solid black !important;
+  margin-top: 31px;
+  border-radius: 9px !important;
+  width: 13%;
+  font-weight: 500;
+}
+
+.menu-section .btn p {
+  margin: 0 23px 0 0;
+}
+
+.menu-section .btn:hover {
+  color: chocolate !important;
+}
+
+/* .arrow {
+  padding: 0 5px;
+} */
+
+.arrow {
+  cursor: pointer;
+  height: 35px;
+  position: absolute;
+  top: 191.3%;
+  transform: translate(111px, -16px);
+  transition: transform 0.1s;
+  width: 15px;
+}
+.arrow-top,
+.arrow-bottom {
+  background-color: black;
+  height: 3px;
+  left: -5px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.arrow-top:after,
+.arrow-bottom:after {
+  background-color: chocolate;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.15s;
+}
+.arrow-top {
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
+
+.arrow-bottom {
+  transform: rotate(-45deg);
+  transform-origin: top right;
+}
+
+.arrow-top:after {
+  left: 100%;
+  right: 0;
+  transition-delay: 0s;
+}
+
+.arrow-bottom:after {
+  left: 0;
+  right: 100%;
+  transition-delay: 0.15s;
+}
+.menu-section .btn:hover .arrow-top:after {
+  left: 0;
+  transition-delay: 0.15s;
+}
+.menu-section .btn:hover .arrow-bottom:after {
+  right: 0;
+  transition-delay: 0s;
+}
+.menu-section .btn:active .arrow {
+  transform: translate(125px, -17px);
+}
+
+/* ------ customer section starts ------ */
+
+.customer-section {
+  margin-bottom: 65px;
+}
+
+.carousel:hover {
+  cursor: pointer;
+}
+
+/*------------------------- Indicators------------------- */
+
+.carousel-indicators {
+  bottom: -41px !important;
+  z-index: 1 !important;
+}
+
+.carousel-indicators li {
+  background-color: chocolate !important;
+  display: inline-block !important;
+  width: 13px !important;
+  height: 13px !important;
+  margin: 1px !important;
+  text-indent: -999px !important;
+  cursor: pointer !important;
+  border: 1px solid #fff !important;
+  border-radius: 13px !important;
+}
+
+.carousel-item {
+  border-bottom: 2px solid black;
+}
+
+/* ------------------------------ The slideshow ----------------- */
+
+.box {
+  height: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+.sp-card {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.box img {
+  width: 27%;
+  border-radius: 55px;
+  margin: 9px;
+  float: left;
+}
+
+.box p {
+  font-size: 1.3rem;
+}
+
+.right-q {
+  position: absolute;
+  right: 73px;
+  bottom: 100px;
+  color: #05acf5;
+}
+
+.left-q {
+  position: absolute;
+  left: 11px;
+  top: 0px;
+  color: #05acf5;
+}
+
+.box h3 {
+  padding: 17px 0 0 0;
+}
+
+/* ----------------  Left and right controls ------------------- */
+
+.pn-icon {
+  font-size: 1.5rem;
+  color: black;
+  opacity: 0 !important;
+}
+
+.carousel:hover .pn-icon {
+  opacity: 1 !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 6% !important;
+}
+
+.carousel-control-next {
+  right: 7px !important;
+}
+
+.carousel-control-prev:active {
+  left: -7px;
+}
+
+.carousel-control-next:active {
+  right: 0px !important;
+}
+
+/* ----- contact-section starts ------- */
+
+.form input,
+textarea {
+  width: 55%;
+  margin: 11px;
+  border-radius: 3px;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+input,
+textarea {
+  border: 1.5px solid black;
+  padding: 3px;
+}
+
+input,
+textarea:placeholder-shown {
+  border-width: 1px;
+}
+
+.form .btn {
+  display: block !important;
+  margin: 21px auto !important;
+  border: 1px solid black !important;
+  color: black !important;
+}
+
+.form .btn:hover {
+  color: chocolate !important;
+}
+
+/* ---- copyright */
+.copyright {
+  background-color: chocolate;
+  color: white;
+  padding: 10px 0;
+}

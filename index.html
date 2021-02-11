@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ABRAR'S CAFE</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- --- external css ---- -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- --- font awesome cdn --- -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="body">
+    <!-- navigation starts -->
+
+    <nav class="navbar" id="navbar">
+      <div class="logo">
+        <img class="logo-img" src="imgs/logo.jpg" alt="Coffe Shop" />
+      </div>
+
+      <div onclick="changeFunction(this);openFunction()" id="icon">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </nav>
+
+    <div class="nav-list" id="nav-list">
+      <ul>
+        <li><a class="nav-link" href="#home-section">Home</a></li>
+
+        <li><a class="nav-link" href="#menu-section">Menu</a></li>
+
+        <li><a class="nav-link" href="#customer-section">Customers</a></li>
+
+        <li><a class="nav-link" href="#contact-section">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- navigation ends -->
+
+    <!-- --- first section starts -->
+
+    <section class="first-section background mb" id="home-section">
+      <div class="main-div">
+        <h1>
+          Welcome To ABRAR'S CAFE
+        </h1>
+        <h3 class="t-small">
+          We Serve What You Deserve
+        </h3>
+        <p>
+          We serve the most beautiful and fresh cofee in Cox'sbazar.We also have
+          a good list of snacks that will make ur day special.Check this out.
+        </p>
+        <button class="btn">
+          Order Now
+        </button>
+
+        <button class="btn">
+          Snacks List
+        </button>
+      </div>
+    </section>
+
+    <!-- --- first section ends -->
+
+    <!-- --- menu section starts -->
+
+    <section class="menu-section mb text-center" id="menu-section">
+      <h1 class="text-center t-big">What Do We Offer</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12 card text-center">
+            <div class="card-body">
+              <img class="coffee-img" src="imgs/coffee.jpg" alt="Coffee" />
+              <h1 class="text-center t-small">Beverage</h1>
+              <p>
+                We have a good list of beverages including Coffee,Espresso
+                Hot,Espresso Hot,Signatures.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 card text-center">
+            <div class="card-body">
+              <img class="snacks-img" src="imgs/snacks.jpg" alt="Coffee" />
+              <h1 class="text-center t-small">Eats</h1>
+              <p>
+                We have a good list of eating items.We have Breakfast,Salad and
+                many more.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-12 card text-center">
+            <div class="card-body">
+              <img class="drink-img" src="imgs/cool-drink.jpg" alt="Coffee" />
+              <h1 class="text-center t-small">Chocolates</h1>
+              <p>
+                After having meals chocolates are a must.Thats why we have made
+                a good place for chocolates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn text-center">
+        <p>
+          Go To Menu
+        </p>
+        <div class="arrow">
+          <div class="arrow-top"></div>
+          <div class="arrow-bottom"></div>
+        </div>
+        <!-- <i class="arrow fa fa-arrow-right" aria-hidden="true"></i> -->
+      </button>
+    </section>
+
+    <!-- --- menu section ends -->
+
+    <!-- --- customer section starts -->
+
+    <section class="customer-section" id="customer-section">
+      <h1 class="text-center t-big">Customer's Review</h1>
+
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+        </ol>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner carousel-main container">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="caro-card col-lg-4 col-12">
+                <div class="box">
+                  <span
+                    ><i class="left-q fa fa-quote-left" aria-hidden="true"></i>
+                  </span>
+                  <p>
+                    An amazing cafe that serves the best in the
+                    cox'sbazar.Awesome taste of coffee and they keep everything
+                    clean.
+                  </p>
+                  <span
+                    ><i
+                      class="right-q fa fa-quote-right"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                  <img src="imgs/jabed.jpg" alt="Jabed" />
+                  <h3>Mohammad Jabed Iqbal</h3>
+                </div>
+              </div>
+
+              <div class="caro-card sp-card col-lg-4 col-12">
+                <div class="box">
+                  <span
+                    ><i class="left-q fa fa-quote-left" aria-hidden="true"></i>
+                  </span>
+                  <p>
+                    I think this is the most awesome and fresh cafe in
+                    cox'sbazar.I visit there more and more and also suggest
+                    everyone.
+                  </p>
+                  <span
+                    ><i
+                      class="right-q fa fa-quote-right"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                  <img src="imgs/farhan.jpg" alt="Jabed" />
+                  <h3>Mohammad Farhan Bin Farid</h3>
+                </div>
+              </div>
+
+              <div class="caro-card col-lg-4 col-12">
+                <div class="box">
+                  <span
+                    ><i class="left-q fa fa-quote-left" aria-hidden="true"></i>
+                  </span>
+                  <p>
+                    What i like the most in this cafe is there's friendly
+                    behavior.Great place to make someone's day awesome.
+                  </p>
+                  <span
+                    ><i
+                      class="right-q fa fa-quote-right"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                  <img src="imgs/sahed.jpg" alt="Jabed" />
+                  <h3>Mohammad Sahedul Amin</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="caro-card col-lg-4 col-12">
+                <div class="box">
+                  <span
+                    ><i class="left-q fa fa-quote-left" aria-hidden="true"></i>
+                  </span>
+                  <p>
+                    An amazing cafe that serves the best in the
+                    cox'sbazar.Awesome taste of coffee and they keep everything
+                    clean.
+                  </p>
+                  <span
+                    ><i
+                      class="right-q fa fa-quote-right"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                  <img src="imgs/jahid.jpg" alt="Jabed" />
+                  <h3>Mohammad Zahidul Islam</h3>
+                </div>
+              </div>
+
+              <div class="caro-card sp-card col-lg-4 col-12">
+                <div class="box">
+                  <span
+                    ><i class="left-q fa fa-quote-left" aria-hidden="true"></i>
+                  </span>
+                  <p>
+                    I think this is the most awesome and fresh cafe in
+                    cox'sbazar.I visit there more and more and also suggest
+                    everyone.
+                  </p>
+                  <span
+                    ><i
+                      class="right-q fa fa-quote-right"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                  <img src="imgs/akib.jpg" alt="Jabed" />
+                  <h3>Nasif Ahmed Akib</h3>
+                </div>
+              </div>
+
+              <div class="caro-card col-lg-4 col-12">
+                <div class="box">
+                  <span
+                    ><i class="left-q fa fa-quote-left" aria-hidden="true"></i>
+                  </span>
+                  <p>
+                    What i like the most in this cafe is there's friendly
+                    behavior.Great place to make someone's day awesome.
+                  </p>
+                  <span
+                    ><i
+                      class="right-q fa fa-quote-right"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                  <img src="imgs/hamim.jpg" alt="Jabed" />
+                  <h3>Mohammad Abu Obaida Hamim</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="pn-icon"
+            ><i class="fa fa-chevron-left" aria-hidden="true"></i
+          ></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="pn-icon"
+            ><i class="fa fa-chevron-right" aria-hidden="true"></i
+          ></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- --- customer section ends -->
+
+    <!-- Contact section starts -->
+
+    <section class="contact-section mb" id="contact-section">
+      <div class="mb">
+        <h1 class="text-center">Tell us about ur problem</h1>
+        <h3 class="text-center t-small">
+          We are here to help u in every possible way.
+        </h3>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="form col-lg-8 offset-lg-2 col-12 text-center">
+            <form action="#">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Type ur name"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Type ur email"
+              />
+              <input
+                type="phone"
+                name="phone"
+                id="phone"
+                placeholder="Type ur phone"
+              />
+              <textarea
+                name="detail"
+                id="detail"
+                cols="30"
+                rows="9"
+                placeholder="Tell us in detail"
+              ></textarea>
+              <button class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section ends -->
+
+
+    <!-- copyright section -->
+
+    <div class="copyright text-center">
+      Copyright ©2020 All right reserved | This template is made by
+      Mohammad Nasib
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- external js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
